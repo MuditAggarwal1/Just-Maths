@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDED4"
+    tools:context="cheezycode.com.justmaths.GameActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCorrect"
+            android:layout_weight="1"
+            android:background="#CA171B"
+            android:src="@drawable/ic_check_white_36dp"
+            android:paddingTop="25dp"
+            android:layout_marginRight="1dp"
+            android:paddingBottom="25dp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnIncorrect"
+            android:layout_weight="1"
+            android:background="#CA171B"
+            android:src="@drawable/ic_close_white_36dp"
+            android:layout_marginLeft="1dp"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:id="@+id/topContainer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TIME :59"
+            android:id="@+id/txtTime"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="#CA171B"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SCORE: 00"
+            android:id="@+id/txtScore"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#CA171B"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11+64"
+        android:id="@+id/txtViewQuestion"
+        android:layout_below="@id/topContainer"
+        android:layout_centerHorizontal="true"
+        android:textSize="70sp"
+        android:layout_marginTop="100dp"
+        android:textIsSelectable="true"
+        android:textColor="#432F21" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="=75"
+        android:id="@+id/txtViewResult"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtViewQuestion"
+        android:textSize="70sp"
+        android:textIsSelectable="true"
+        android:textColor="#432F21" />
+
+</RelativeLayout>

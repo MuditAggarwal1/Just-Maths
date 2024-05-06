@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="100dp"
+    android:paddingBottom="100dp"
+    android:background="#DFDED4"
+    tools:context="cheezycode.com.justmaths.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just Maths"
+        android:id="@+id/textView"
+        android:textSize="50sp"
+        android:textColor="#432F21"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMathShare"
+            android:src="@drawable/ic_share_white_36dp"
+            android:background="@drawable/roundedbtn"
+            android:padding="5dp"
+            android:layout_margin="2dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMathPlay"
+            android:src="@drawable/ic_play_arrow_white_36dp"
+            android:background="@drawable/roundedbtn"
+            android:padding="5dp"
+            android:layout_margin="2dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMathRate"
+            android:src="@drawable/ic_star_white_36dp"
+            android:background="@drawable/roundedbtn"
+            android:padding="5dp"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+
+</RelativeLayout>
